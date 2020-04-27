@@ -1,39 +1,38 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useLayoutEffect } from 'react';
 import '../Resources/stylesheet.scss';
-import CrispOceanWaves from '../Resources/CrispOceanWaves.mp3';
 import { Icon } from 'react-icons-kit';
 import { play, pause } from 'react-icons-kit/fa';
 
-const Vibe = (props) => {
+const Vibe = ({playerId, name, src, icon}) => {
     const [playing, setPlaying] = useState(false);
     const [volume, setVolume] = useState(100);
-    let crispWavesPlayer;
+    let player;
 
     const initPlayer = () => {
-        crispWavesPlayer = document.getElementById('crispWavesPlayer')
+        player = document.getElementById(playerId)
     }
 
     const handlePlayPause = () => {
-        console.log(crispWavesPlayer);
-        console.log(crispWavesPlayer.volume);
-        if (crispWavesPlayer.paused || crispWavesPlayer.ended) {
+        console.log(player);
+        console.log(player.volume);
+        if (player.paused || player.ended) {
             console.log('going to play');
-            crispWavesPlayer.play()
+            player.play()
             setPlaying(true);
         }
         else {
             console.log('going to pause')
-            console.log(crispWavesPlayer)
-            crispWavesPlayer.pause();
+            console.log(player)
+            player.pause();
             setPlaying(false);
         }
     } 
     const handleVolumeChange = (volume) => {
-        crispWavesPlayer.volume = volume/100;
+        player.volume = volume/100;
         setVolume(volume);
     } 
 
-    useEffect(() => {
+    useLayoutEffect(() => {
         initPlayer()
     })
 
@@ -42,19 +41,20 @@ const Vibe = (props) => {
     }, [playing])
 
     return (<>
-        <audio id="crispWavesPlayer">
-            <source src={CrispOceanWaves}/>
+        <audio id={playerId}>
+            <source src={src}/>
         </audio>
         <div class="vibe">
-            <div className="iconTitleContainer">
-                <img src={undefined} alt="icon"/>
-                <h3>Crisp Ocean</h3>
+            <div className="iconContainer">
+                <img src={icon} className='soundIcon' alt="icon"/>
+            </div>
+            <div className="titleContainer">
             </div>
             <div className='playPauseContainer'>
-                {playing ? <Icon icon={pause} size={'40%'} className='playPause' onClick={handlePlayPause}/> : <Icon icon={play} size={'40%'} className='playPause' onClick={handlePlayPause}/>}
+                {playing ? <Icon icon={pause} size={'30%'} className='playPause' onClick={handlePlayPause}/> : <Icon icon={play} size={'30%'} className='playPause' onClick={handlePlayPause}/>}
             </div>
             <div className='volumeContainer'>
-                <input type="range" value={volume} onChange={event => handleVolumeChange(event.target.value)}/>
+                <input type="range" value={volume} style={{opacity: .5 + volume / 200 }} onChange={event => handleVolumeChange(event.target.value)}/>
             </div>
             
         </div>

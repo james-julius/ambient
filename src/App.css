@@ -5,12 +5,14 @@ body {
   box-sizing: border-box;
   text-align: center;
 
-  background: linear-gradient(60deg, #40d3ad, #60c3f6);
+  background: linear-gradient(60deg, #96F9FF, #8CFF97);
+  /* Night mode */
+  /* background: linear-gradient(60deg, #28524E, #5367A0); */
   background-size: 400% 400%;
 
-  -webkit-animation: AnimationName 15s ease infinite;
-  -moz-animation: AnimationName 15s ease infinite;
-  animation: AnimationName 15s ease infinite;
+  -webkit-animation: AnimationName 8s ease infinite;
+  -moz-animation: AnimationName 8s ease infinite;
+  animation: AnimationName 8s ease infinite;
 }
 
 .App {

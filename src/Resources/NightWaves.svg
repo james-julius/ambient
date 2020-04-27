@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="114px" height="110px" viewBox="0 0 114 110" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Night Waves</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-19.4%" y="-14.3%" width="138.8%" height="128.6%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.75206635   0 0 0 0 0.716583951   0 0 0 0 0.716583951  0 0 0 0.152589598 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <path d="M2,61.5686256 C9.30866696,59.1905012 9.99726123,61.5686256 9.99726123,61.5686256 C9.99726123,61.5686256 14.5293611,64.6002048 17.8319869,63.8930704 C20.2100479,63.3838971 22.932713,61.3737174 25.9999824,57.8625315 C28.3634031,61.8828907 30.9463643,63.8930704 33.7488658,63.8930704 C36.5513674,63.8930704 41.661315,60.6013884 49.0787085,54.0180246 C53.3380155,62.3114046 57.2244288,65.2477298 60.7379485,62.8270002 C64.8292946,60.0081623 68.3889815,56.0658288 71.4170092,51 C72.9847403,58.0457504 76.4766925,61.5686256 81.8928657,61.5686256 C87.1278921,61.5686256 92.4969369,60.3332609 98,57.8625315" id="path-2"></path>
+        <filter x="-13.2%" y="-93.6%" width="124.4%" height="301.3%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="2.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="-1" dy="3" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="2.5" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="-1" dy="3" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.190746979   0 0 0 0 0.331772551   0 0 0 0 0.510812953  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <path d="M14,79.0608987 C14.6239468,80.3130338 16.4969715,80.3130338 19.619074,79.0608987 C22.7411766,77.8087636 25.9056135,75.7884641 29.1123849,73 C33.7319376,77.0405991 38.2006937,79.0608987 42.5186533,79.0608987 C46.8366129,79.0608987 51.0119941,77.0405991 55.044797,73 C57.9790238,76.2204132 61.703158,77.8306197 66.2171995,77.8306197 C70.731241,77.8306197 74.9317119,76.2204132 78.8186123,73 C83.7833706,76.429744 87.1771665,77.5964107 89,76.5" id="path-4"></path>
+        <filter x="-17.1%" y="-130.3%" width="131.7%" height="430.7%" filterUnits="objectBoundingBox" id="filter-5">
+            <feMorphology radius="2.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="-1" dy="3" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="2.5" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="-1" dy="3" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.190746979   0 0 0 0 0.331772551   0 0 0 0 0.510812953  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-75.000000, -301.000000)">
+            <g id="Night-Waves" filter="url(#filter-1)" transform="translate(83.000000, 305.000000)">
+                <path d="M0.540105738,45.8419703 C7.87151505,43.4023387 8.56225202,45.8419703 8.56225202,45.8419703 C8.56225202,45.8419703 13.1084544,48.9519577 16.421357,48.226534 C18.8068178,47.7041916 21.537955,45.6420211 24.6147688,42.0400225 C26.9855438,46.1643635 29.5765423,48.226534 32.3877644,48.226534 C35.1989865,48.226534 40.3248347,44.8497167 47.7653089,38.0960821 C52.0378695,46.6039604 55.9363762,49.6162301 59.4608289,47.1328913 C63.564906,44.2411475 67.1356696,40.1968504 70.1731196,35 C71.745729,42.2279802 75.2485471,45.8419703 80.6815738,45.8419703 C85.93289,45.8419703 91.3186417,44.5746544 96.8388286,42.0400225 C97.2934271,49.7497968 96.7863484,56.3777474 95.3175926,61.9238744 C93.2599284,69.6937612 91.0640367,75.4344143 86.4472543,80.2859522 C82.2471392,84.6996358 81.6414791,87.8279593 68.7471488,93.741296 C62.5562689,96.580432 55.5623222,98 47.7653089,98 C36.3869397,96.0171522 28.670093,93.8638622 24.6147688,91.5401301 C11.9713231,84.2953379 5.9920896,73.754348 4.88505138,71.095808 C-0.062583767,59.2141171 -0.13758859,46.0674828 0.540105738,45.8419703 Z" id="Path" stroke="#D9D3D3" stroke-width="3" fill="#527DD1"></path>
+                <g id="Path-Copy">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                    <use stroke="#D9D3D3" stroke-width="3" xlink:href="#path-2"></use>
+                </g>
+                <g id="Path-2">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                    <use stroke="#D9D3D3" stroke-width="3" xlink:href="#path-4"></use>
+                </g>
+                <path d="M49,98 C56.1124908,98 62.8710443,96.4846145 68.9704058,93.7590981 C86.0781932,86.1144367 98,68.9494619 98,49 C98,21.9380473 76.0619527,0 49,0 C21.9380473,0 0,21.9380473 0,49 C0,76.0619527 21.9380473,98 49,98 Z" id="Oval" stroke="#D9D3D3" stroke-width="4"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="106px" height="110px" viewBox="0 0 106 110" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Wind Day</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-156.1%" y="-214.6%" width="412.1%" height="525.0%" filterUnits="objectBoundingBox" id="filter-1">
+            <feMorphology radius="1" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="3" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="3" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.564736187   0 0 0 0 0.5600444   0 0 0 0 0.5600444  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-117.5%" y="-113.7%" width="335.0%" height="327.5%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="8" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-117.5%" y="-1087.4%" width="335.0%" height="2274.8%" filterUnits="objectBoundingBox" id="filter-3">
+            <feGaussianBlur stdDeviation="8" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-135.5%" y="-336.7%" width="371.1%" height="780.0%" filterUnits="objectBoundingBox" id="filter-4">
+            <feMorphology radius="1" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="3" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="3" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.564736187   0 0 0 0 0.5600444   0 0 0 0 0.5600444  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-82.6%" y="-1080.9%" width="265.2%" height="2261.9%" filterUnits="objectBoundingBox" id="filter-5">
+            <feGaussianBlur stdDeviation="8" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-192.7%" y="-188.5%" width="485.5%" height="477.0%" filterUnits="objectBoundingBox" id="filter-6">
+            <feGaussianBlur stdDeviation="8" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-88.8%" y="-214.6%" width="277.6%" height="525.0%" filterUnits="objectBoundingBox" id="filter-7">
+            <feMorphology radius="1" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="3" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="3" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.564736187   0 0 0 0 0.5600444   0 0 0 0 0.5600444  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-197.5%" y="-113.7%" width="494.9%" height="327.5%" filterUnits="objectBoundingBox" id="filter-8">
+            <feGaussianBlur stdDeviation="8" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-55.2%" y="-1087.4%" width="210.4%" height="2274.8%" filterUnits="objectBoundingBox" id="filter-9">
+            <feGaussianBlur stdDeviation="8" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-83.3%" y="-114.6%" width="266.7%" height="325.0%" filterUnits="objectBoundingBox" id="filter-10">
+            <feMorphology radius="1" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="3" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="3" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.564736187   0 0 0 0 0.5600444   0 0 0 0 0.5600444  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-8.4%" y="-8.1%" width="116.8%" height="116.3%" filterUnits="objectBoundingBox" id="filter-11">
+            <feGaussianBlur stdDeviation="0" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-8.4%" y="-31.4%" width="116.8%" height="162.8%" filterUnits="objectBoundingBox" id="filter-12">
+            <feGaussianBlur stdDeviation="0" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-72.4%" y="-176.7%" width="244.7%" height="460.0%" filterUnits="objectBoundingBox" id="filter-13">
+            <feMorphology radius="1" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="3" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="3" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.564736187   0 0 0 0 0.5600444   0 0 0 0 0.5600444  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-5.9%" y="-30.9%" width="111.8%" height="161.9%" filterUnits="objectBoundingBox" id="filter-14">
+            <feGaussianBlur stdDeviation="0" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-13.8%" y="-13.5%" width="127.6%" height="127.0%" filterUnits="objectBoundingBox" id="filter-15">
+            <feGaussianBlur stdDeviation="0" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-47.4%" y="-114.6%" width="194.8%" height="325.0%" filterUnits="objectBoundingBox" id="filter-16">
+            <feMorphology radius="1" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="3" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="3" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.564736187   0 0 0 0 0.5600444   0 0 0 0 0.5600444  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-14.1%" y="-8.1%" width="128.3%" height="116.3%" filterUnits="objectBoundingBox" id="filter-17">
+            <feGaussianBlur stdDeviation="0" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-3.9%" y="-31.4%" width="107.9%" height="162.8%" filterUnits="objectBoundingBox" id="filter-18">
+            <feGaussianBlur stdDeviation="0" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-378.000000, -66.000000)">
+            <g id="Wind-Day" transform="translate(380.000000, 68.000000)">
+                <g id="Group-2" filter="url(#filter-1)" transform="translate(25.000000, 22.000000)" stroke="#C3B7B7" stroke-linecap="round" stroke-width="3.7">
+                    <g id="Group" transform="translate(11.000000, 0.000000)">
+                        <path d="M11,22.7272727 C17.0751322,22.7272727 22,17.6395994 22,11.3636364 C22,5.0876733 17.0751322,8.8817842e-15 11,8.8817842e-15 C4.92486775,8.8817842e-15 3.55271368e-15,5.0876733 3.55271368e-15,11.3636364" id="Oval-6" filter="url(#filter-2)"></path>
+                    </g>
+                    <line x1="0" y1="22.7272727" x2="22" y2="22.7272727" id="Path-9" filter="url(#filter-3)"></line>
+                </g>
+                <g id="Group-3" filter="url(#filter-4)" transform="translate(28.000000, 66.000000)" stroke="#C3B7B7" stroke-linecap="round" stroke-width="3.7">
+                    <line x1="0" y1="1.28571429" x2="31.2941176" y2="1.28571429" id="Path-10" filter="url(#filter-5)"></line>
+                    <path d="M24.5882353,8.14285714 C24.5882353,11.9299526 27.5905612,15 31.2941176,15 C34.9976741,15 38,11.9299526 38,8.14285714 C38,4.35576171 34.9976741,1.28571429 31.2941176,1.28571429" id="Oval-7" filter="url(#filter-6)"></path>
+                </g>
+                <g id="Group-4" filter="url(#filter-7)" transform="translate(22.000000, 34.000000)" stroke="#C3B7B7" stroke-linecap="round" stroke-width="3.7">
+                    <path d="M46.8461538,22.7272727 C53.0062529,22.7272727 58,17.6395994 58,11.3636364 C58,5.0876733 53.0062529,0 46.8461538,0 C46.1851638,0 45.5376029,0.0585778716 44.9081994,0.170916161" id="Oval-8" filter="url(#filter-8)"></path>
+                    <line x1="0" y1="22.7272727" x2="46.8461538" y2="22.7272727" id="Path-11" filter="url(#filter-9)"></line>
+                </g>
+                <g id="3741354-weather-wind-windy_108870-(1)" transform="translate(22.000000, 22.000000)" stroke="#C3B7B7" stroke-linecap="round" stroke-width="3.7">
+                    <g id="Group-2" filter="url(#filter-10)" transform="translate(3.000000, 0.000000)">
+                        <g id="Group" transform="translate(11.000000, 0.000000)">
+                            <path d="M11,22.7272727 C17.0751322,22.7272727 22,17.6395994 22,11.3636364 C22,5.0876733 17.0751322,8.8817842e-15 11,8.8817842e-15 C4.92486775,8.8817842e-15 3.55271368e-15,5.0876733 3.55271368e-15,11.3636364" id="Oval-6" filter="url(#filter-11)"></path>
+                        </g>
+                        <line x1="0" y1="22.7272727" x2="22" y2="22.7272727" id="Path-9" filter="url(#filter-12)"></line>
+                    </g>
+                    <g id="Group-3" filter="url(#filter-13)" transform="translate(6.000000, 44.000000)">
+                        <line x1="0" y1="1.28571429" x2="31.2941176" y2="1.28571429" id="Path-10" filter="url(#filter-14)"></line>
+                        <path d="M24.5882353,8.14285714 C24.5882353,11.9299526 27.5905612,15 31.2941176,15 C34.9976741,15 38,11.9299526 38,8.14285714 C38,4.35576171 34.9976741,1.28571429 31.2941176,1.28571429" id="Oval-7" filter="url(#filter-15)"></path>
+                    </g>
+                    <g id="Group-4" filter="url(#filter-16)" transform="translate(0.000000, 12.000000)">
+                        <path d="M46.8461538,22.7272727 C53.0062529,22.7272727 58,17.6395994 58,11.3636364 C58,5.0876733 53.0062529,0 46.8461538,0 C46.1851638,0 45.5376029,0.0585778716 44.9081994,0.170916161" id="Oval-8" filter="url(#filter-17)"></path>
+                        <line x1="0" y1="22.7272727" x2="46.8461538" y2="22.7272727" id="Path-11" filter="url(#filter-18)"></line>
+                    </g>
+                </g>
+                <circle id="Oval-Copy-2" stroke="#979797" stroke-width="4" cx="50.6859703" cy="50" r="50"></circle>
+            </g>
+        </g>
+    </g>
+</svg>
