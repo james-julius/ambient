@@ -3,7 +3,7 @@ import '../Resources/stylesheet.scss';
 import { Icon } from 'react-icons-kit';
 import { play, pause } from 'react-icons-kit/fa';
 
-const Vibe = ({playerId, name, src, icon}) => {
+const Vibe = ({playerId, name, src, icon, nightMode}) => {
     const [playing, setPlaying] = useState(false);
     const [volume, setVolume] = useState(100);
     let player;
@@ -35,7 +35,7 @@ const Vibe = ({playerId, name, src, icon}) => {
     useLayoutEffect(() => {
         initPlayer()
     })
-
+    
     useEffect(() => {
         console.log(playing)
     }, [playing])
@@ -44,7 +44,7 @@ const Vibe = ({playerId, name, src, icon}) => {
         <audio id={playerId}>
             <source src={src}/>
         </audio>
-        <div class="vibe">
+        <div className="vibe">
             <div className="iconContainer">
                 <img src={icon} className='soundIcon' alt="icon"/>
             </div>
@@ -62,4 +62,4 @@ const Vibe = ({playerId, name, src, icon}) => {
     )
 }
 
-export default Vibe;
+export default React.memo(Vibe);

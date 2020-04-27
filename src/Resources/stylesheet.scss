@@ -1,3 +1,5 @@
+@import '../Resources/fonts/BalooBhaina2-Medium.ttf';
+
 @mixin flex-center {
     display: flex;
     align-items: center;
@@ -10,96 +12,231 @@
     justify-content: center;
 }
 
-h1 {
-    font-weight: bold;
+body {
+    margin: 0;
+    padding:0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Baloo Bhaina 2';
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
-
-#sidebar {
+  
+.day {
+    background: linear-gradient(230deg,  #96F9FF, #8CFF97);
+    transition: fade 4s ease;
+    /* background: linear-gradient(60deg, rgb(213, 150, 255), #8CFF97); */
+}
+.night {
+    // background: linear-gradient(red, blue);
+    background: linear-gradient(60deg, #28524E, #5367A0); 
+    transition: fade 4s ease;
+}
+.App {
+    height: 100vh;
+    width: 100vw;
+    color: white;
     display: flex;
     flex-direction: column;
     align-content: center;
-    /* justify-content: center; */
-    padding: 20px;
-    width: 400px;
-    height: 100vh;
-    position: fixed;
-    left: 0;
-    top: 0;
-}
-
-
-#vibe-selector {
-    display: flex;
-    flex-wrap: wrap;
-    padding: auto;
     justify-content: center;
-    margin: auto;
-    /* border: 1px solid lightgray; */
-}
+    background-size: 400% 400%;
+    font-size: 2rem;
+    font-weight: bold;
+    transition: background-color 4s linear;
+    h1 {
+        margin-top: 5px;
+        font-weight: 400;
+        height: 50px;
+    }
 
-.vibe {
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    margin: 4px auto;
-    height: 80px;
-    width: 90%;
-    max-width: 375px;
-    background-color: rgba(176, 196, 222, .6);
-    grid-template: 30% 70% / 25% 25% 50%;
-    grid-template-areas: 'icon play volume'
-                         'icon play volume';
-    border-radius: 23px;
-    cursor: pointer;
-
-    .iconContainer {
-        grid-area: icon;
-        max-height: 100%;
+    .nightLightContainer {
+        margin: 15px auto -20px auto;
+        z-index: 1;
+        height: 50px;
+        width: 100px;
+        border-top-left-radius: 100px;
+        border-top-right-radius: 100px;
+        border: 2px solid white;
+        position: relative;
+        overflow: hidden;
+    }
+    .dayContainer {
+        background: linear-gradient(230deg, #96F9FF, #8CFF97);
+        transition: fade 4s ease;
+    }
+    .nightLight {
         @include flex-col-center;
-        img {
+        height: 100px;
+        width: 100px;
+        margin: 0px auto;
+        position: relative;
+        top: 10px;
+        z-index: 2;
+        animation: dayToNight 4s forwards;
+        .sun {
+            color: goldenrod;
+            position: relative;
+        }
+        .moon {
+            color: lightskyblue;
+            transform: rotate(180deg);
+            position: relative;
+        }
+    }
+
+    .rotate-up {
+        animation: rotateUp 4s ease forwards;
+    }
+    .rotate-down {
+        animation: rotateDown 4s ease forwards;
+    }
+
+    .fade-in {
+        animation: fadeIn 2s forwards;
+    }
+    .fade-out {
+        animation: fadeOut 2s forwards;
+    }
+
+    @keyframes rotateUp {
+        0% {transform: rotate(0deg)}
+        100% {transform: rotate(180deg)}
+    }
+    @keyframes rotateDown {
+        0% {transform: rotate(180deg)}
+        100% {transform: rotate(360deg)}
+    }
+    @keyframes fadeIn {
+        0% {opacity: 0}
+        100% {opacity: 1}
+    }
+    @keyframes fadeOut {
+        0% {opacity: 1}
+        100% {opacity: 0}
+    }
+
+    #vibe-selector {
+        display: flex;
+        flex-wrap: wrap;
+        padding: auto;
+        justify-content: center;
+        margin: auto;
+        /* border: 1px solid lightgray; */
+    }
+
+    // Vibe component
+    .vibe {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        margin: 4px auto;
+        height: 80px;
+        width: 90%;
+        max-width: 375px;
+        background: rgba(100,100,100,.10);
+        background-size: 400% 400%;
+        box-shadow: 2px 2px rgba(200,200,200, .3);
+        grid-template: 30% 70% / 25% 25% 50%;
+        grid-template-areas: 'icon play volume'
+                            'icon play volume';
+        border-radius: 17px;
+        cursor: pointer;
+
+        .iconContainer {
+            grid-area: icon;
+            max-height: 100%;
             @include flex-col-center;
-            max-height: 80%;
-            height: 60%;
-            width: auto;
-            font-size: 10px;
+            img {
+                @include flex-col-center;
+                max-height: 80%;
+                height: 60%;
+                width: auto;
+                font-size: 10px;
+            }
         }
-    }
-    .titleContainer {
-        grid-area: title;
-        @include flex-center;
-        justify-content: flex-start;
-        font-size: 15px;
-    }
-
-    .playPauseContainer {
-        grid-area: play;
-        @include flex-center;
-        .playPause {
+        .titleContainer {
+            grid-area: title;
             @include flex-center;
-            margin: auto;
+            justify-content: flex-start;
+            font-size: 15px;
         }
-    }
 
-    .volumeContainer {
-        @include flex-col-center;
-        grid-area: volume;
-        h3 {
-            font-size: 10px;
+        .playPauseContainer {
+            grid-area: play;
+            @include flex-center;
+            .playPause {
+                @include flex-center;
+                margin: auto;
+            }
         }
-        input[type=range] {
-            -webkit-appearance: none;
-            height: 20px;
-            background: rgba(216, 224, 235, 0.8);
-            border-radius: 20px;
-            &::-webkit-slider-thumb {
+
+        .volumeContainer {
+            @include flex-col-center;
+            grid-area: volume;
+            h3 {
+                font-size: 10px;
+            }
+            input[type=range] {
                 -webkit-appearance: none;
-                height: 16px;
-                width: 16px;
-                background: rgba(147, 157, 168, 0.8);
+                height: 20px;
+                background: rgba(216, 224, 235, 0.8);
                 border-radius: 20px;
-                z-index: 2;
+                &::-webkit-slider-thumb {
+                    -webkit-appearance: none;
+                    height: 16px;
+                    width: 16px;
+                    background: rgba(147, 157, 168, 0.8);
+                    border-radius: 20px;
+                    z-index: 2;
+                }
             }
         }
     }
-    
+}
+
+.glide {
+    animation: Glide 5s ease infinite;
+    -moz-animation: Glide 5s ease infinite;
+    -webkit-animation: Glide 5s ease infinite;
+}
+
+.glideTwo {
+animation: GlideTwo 5s ease infinite;
+-moz-animation: GlideTwo 5s ease infinite;
+-webkit-animation: GlideTwo 5s ease infinite;
+}
+  
+  
+@keyframes Glide {
+    0%{background-position:0% 36%}
+    50%{background-position:100% 65%}
+    100%{background-position:0% 36%}
+}
+@-webkit-keyframes Glide {
+      0%{background-position:0% 36%}
+      50%{background-position:100% 65%}
+      100%{background-position:0% 36%}
+}
+@-moz-keyframes Glide {
+      0%{background-position:0% 36%}
+      50%{background-position:100% 65%}
+      100%{background-position:0% 36%}
+}
+@keyframes GlideTwo {
+    0%{background-position:0% 36%}
+    50%{background-position:100% 65%}
+    100%{background-position:0% 36%}
+}
+@-moz-keyframes GlideTwo {
+    0%{background-position:0% 36%}
+    50%{background-position:100% 65%}
+    100%{background-position:0% 36%}
+}
+@-webkit-keyframes GlideTwo {
+    0%{background-position:0% 36%}
+    50%{background-position:100% 65%}
+    100%{background-position:0% 36%}
 }
