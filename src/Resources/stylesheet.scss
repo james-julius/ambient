@@ -1,0 +1,100 @@
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin flex-col-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+#sidebar {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    /* justify-content: center; */
+    padding: 20px;
+    width: 400px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+
+#vibe-selector {
+    display: flex;
+    flex-wrap: wrap;
+    padding: auto;
+    justify-content: center;
+    margin: auto;
+    /* border: 1px solid lightgray; */
+}
+
+.vibe {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    height: 80px;
+    width: 90%;
+    max-width: 375px;
+    background-color: rgba(176, 196, 222, .8);
+    grid-template: 100% / 25% 25% 50%;
+    grid-template-areas: 'iconTitle play volume';
+    border-radius: 15px;
+    cursor: pointer;
+
+    .iconTitleContainer {
+        grid-area: iconTitle;
+        @include flex-col-center;
+        align-items: space-between;
+        img {
+            height: 80%;
+            width: auto;
+            font-size: 10px;
+        }
+        h3 {
+            font-size: 10px;
+        }
+    }
+
+    .playPauseContainer {
+        grid-area: play;
+        @include flex-center;
+        .playPause {
+            margin: auto;
+        }
+    }
+
+    .volumeContainer {
+        @include flex-center;
+        grid-area: volume;
+        input[type=range] {
+            -webkit-appearance: none;
+            height: 15px;
+            background: rgba(216, 224, 235, 0.8);
+            border-radius: 20px;
+            &::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                height: 13px;
+                width: 13px;
+                background: rgba(147, 157, 168, 0.8);
+                margin: auto 2px;
+                border-radius: 20px;
+                z-index: 2;
+            }
+        }
+    }
+    
+}
+
+.vibe:hover {
+    background-color: rgba(176, 196, 222, .6);
+}

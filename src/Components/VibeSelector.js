@@ -1,6 +1,6 @@
 import React from 'react';
 import Vibe from './Vibe';
-import '../Resources/stylesheet.css';
+import '../Resources/stylesheet.scss';
 
 const VibeSelector = () => {
     const names = ['Ocean Waves', 'Ocean Depths', 'Summer Fields', 'Rainforest', 'Birds Chirping', 'Storm']
