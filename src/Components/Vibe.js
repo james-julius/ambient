@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useLayoutEffect } from 'react';
+import React, { useState, useLayoutEffect } from 'react';
 import '../Resources/stylesheet.scss';
 import { Icon } from 'react-icons-kit';
 import { play, pause } from 'react-icons-kit/fa';
@@ -35,10 +35,6 @@ const Vibe = ({playerId, name, src, icon, nightMode}) => {
     useLayoutEffect(() => {
         initPlayer()
     })
-    
-    useEffect(() => {
-        console.log(playing)
-    }, [playing])
 
     return (<>
         <audio id={playerId}>

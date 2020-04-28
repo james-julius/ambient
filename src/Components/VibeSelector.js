@@ -1,8 +1,11 @@
 import React from 'react';
 import Vibe from './Vibe';
 import '../Resources/stylesheet.scss';
-import CrispOceanWaves from '../Resources/CrispOceanWaves.mp3';
-import RainyMood from '../Resources/CrispOceanWaves.mp3';
+import AmbiaOcean from '../Resources/AmbiaOcean.mp3';
+import AmbiaRain from '../Resources/AmbiaRain.mp3';
+import AmbiaStorm from '../Resources/AmbiaStorm.mp3';
+import AmbiaForest from '../Resources/AmbiaForest.mp3';
+import AmbiaWind from '../Resources/AmbiaWind.mp3';
 import DayForest from '../Resources/DayForest.svg';
 import DayRain from '../Resources/DayRain.svg';
 import DayStorm from '../Resources/DayStorm.svg';
@@ -18,35 +21,35 @@ const VibeSelector = (props) => {
     let index = 0;
     const vibes= [{
             playerId: 'oceanPlayer',
-            src: CrispOceanWaves,
+            src: AmbiaOcean,
             name: 'Ocean Waves',
             dayIcon: DayWaves,
             nightIcon: NightWaves,
             nightMode: props.nightMode
         },{
             playerId: 'forestPlayer',
-            src: CrispOceanWaves,
+            src: AmbiaForest,
             name: 'Rich Forest',
             dayIcon: DayForest,
             nightIcon: NightForest,
             nightMode: props.nightMode
         },{
             playerId: 'rainPlayer',
-            src: RainyMood,
+            src: AmbiaRain,
             name: 'Rain',
             dayIcon: DayRain,
             nightIcon: NightRain,
             nightMode: props.nightMode
         },{
             playerId: 'stormPlayer',
-            src: CrispOceanWaves,
+            src: AmbiaStorm,
             name: 'Stormy',
             dayIcon: DayStorm,
             nightIcon: NightStorm,
             nightMode: props.nightMode
         },{
             playerId: 'stormPlayer',
-            src: CrispOceanWaves,
+            src: AmbiaWind,
             name: 'Breeze',
             dayIcon: DayWind,
             nightIcon: NightWind,
