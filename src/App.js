@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useLayoutEffect, useRef } from 'react';
+import React, { useState, useRef } from 'react';
 // import logo from './logo.svg';
 import VibeSelector from './Components/VibeSelector';
 import './Resources/stylesheet.scss';
@@ -39,8 +39,6 @@ function App() {
       }
     }
   }
-
-  useLayoutEffect(() => {handleDarkMode()}, [])
 
   return (
     <div id='App' className={darkModeClasses} ref={app}>

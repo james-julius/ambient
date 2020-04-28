@@ -26,13 +26,15 @@ body {
   
 .day {
     background: linear-gradient(230deg,  #96F9FF, #8CFF97);
-    transition: fade 4s ease;
+    background: linear-gradient(230deg, rgb(30, 114, 120), rgb(30, 125, 39));
+    
+    transition: all 3s ease;
     /* background: linear-gradient(60deg, rgb(213, 150, 255), #8CFF97); */
 }
 .night {
     // background: linear-gradient(red, blue);
     background: linear-gradient(60deg, #28524E, #5367A0); 
-    transition: fade 4s ease;
+    transition: all 3s ease;
 }
 .App {
     height: 100vh;
@@ -62,6 +64,7 @@ body {
         border: 2px solid white;
         position: relative;
         overflow: hidden;
+        cursor: pointer;
     }
     .dayContainer {
         background: linear-gradient(230deg, #96F9FF, #8CFF97);

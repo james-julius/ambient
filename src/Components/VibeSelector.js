@@ -2,6 +2,7 @@ import React from 'react';
 import Vibe from './Vibe';
 import '../Resources/stylesheet.scss';
 import CrispOceanWaves from '../Resources/CrispOceanWaves.mp3';
+import RainyMood from '../Resources/CrispOceanWaves.mp3';
 import DayForest from '../Resources/DayForest.svg';
 import DayRain from '../Resources/DayRain.svg';
 import DayStorm from '../Resources/DayStorm.svg';
@@ -10,7 +11,7 @@ import DayWind from '../Resources/DayWind.svg';
 import NightForest from '../Resources/NightForest.svg';
 import NightRain from '../Resources/NightRain.svg';
 import NightStorm from '../Resources/DayStorm.svg';
-import NightWaves from '../Resources/NightStorm.svg';
+import NightWaves from '../Resources/NightWaves.svg';
 import NightWind from '../Resources/NightWind.svg';
 
 const VibeSelector = (props) => {
@@ -31,7 +32,7 @@ const VibeSelector = (props) => {
             nightMode: props.nightMode
         },{
             playerId: 'rainPlayer',
-            src: CrispOceanWaves,
+            src: RainyMood,
             name: 'Rain',
             dayIcon: DayRain,
             nightIcon: NightRain,
