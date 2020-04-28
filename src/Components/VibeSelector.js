@@ -48,7 +48,7 @@ const VibeSelector = (props) => {
             nightIcon: NightStorm,
             nightMode: props.nightMode
         },{
-            playerId: 'stormPlayer',
+            playerId: 'windPlayer',
             src: AmbiaWind,
             name: 'Breeze',
             dayIcon: DayWind,
