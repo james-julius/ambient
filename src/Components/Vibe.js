@@ -13,8 +13,6 @@ const Vibe = ({playerId, name, src, icon, nightMode}) => {
     }
 
     const handlePlayPause = () => {
-        console.log(player);
-        console.log(player.volume);
         if (player.paused || player.ended) {
             console.log('going to play');
             player.play()
@@ -22,7 +20,6 @@ const Vibe = ({playerId, name, src, icon, nightMode}) => {
         }
         else {
             console.log('going to pause')
-            console.log(player)
             player.pause();
             setPlaying(false);
         }
@@ -37,7 +34,7 @@ const Vibe = ({playerId, name, src, icon, nightMode}) => {
     })
 
     return (<>
-        <audio id={playerId}>
+        <audio id={playerId} loop>
             <source src={src}/>
         </audio>
         <div className="vibe">
